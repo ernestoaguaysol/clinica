@@ -18,6 +18,20 @@ namespace WebAppVet.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+            //context.Restaurants.AddOrUpdate(r => r.Name,
+            //    new Restaurant { Name = "Sebatino's", City = "Baltimore", Country = "USA" },
+            //    new Restaurant { Name = "Great Lake", City = "Chicago", Country = "USA" },
+            //    new Restaurant
+            //    {
+            //        Name = "Smaka",
+            //        City = "Gothenburg",
+            //        Country = "Sweden",
+            //        Reviews = new List<RestaurantReview>
+            //        {
+            //           new RestaurantReview { Rating=5, Body="great Food!", ReviewerName="Scott" }
+            //        }
+            //    });
         }
     }
 }

@@ -151,13 +151,19 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Data\ClinicaDbContext.cs" />
+    <Compile Include="Data\RoomDataGateway.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IEntity.cs" />
-    <Compile Include="Migrations\201905132349345_Initial-Create.cs" />
-    <Compile Include="Migrations\201905132349345_Initial-Create.Designer.cs">
-      <DependentUpon>201905132349345_Initial-Create.cs</DependentUpon>
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Migrations\201905210010596_Initial-Create.cs" />
+    <Compile Include="Migrations\201905210010596_Initial-Create.Designer.cs">
+      <DependentUpon>201905210010596_Initial-Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905210035589_Initial-Create2.cs" />
+    <Compile Include="Migrations\201905210035589_Initial-Create2.Designer.cs">
+      <DependentUpon>201905210035589_Initial-Create2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
@@ -165,6 +171,7 @@
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedKernel\Enum.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -186,10 +193,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905132349345_Initial-Create.resx">
-      <DependentUpon>201905132349345_Initial-Create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905210010596_Initial-Create.resx">
+      <DependentUpon>201905210010596_Initial-Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905210035589_Initial-Create2.resx">
+      <DependentUpon>201905210035589_Initial-Create2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
