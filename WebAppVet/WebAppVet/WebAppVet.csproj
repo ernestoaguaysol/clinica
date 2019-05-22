@@ -157,13 +157,17 @@
     </Compile>
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Migrations\201905210010596_Initial-Create.cs" />
-    <Compile Include="Migrations\201905210010596_Initial-Create.Designer.cs">
-      <DependentUpon>201905210010596_Initial-Create.cs</DependentUpon>
+    <Compile Include="Migrations\201905221133449_Initial-Create.cs" />
+    <Compile Include="Migrations\201905221133449_Initial-Create.Designer.cs">
+      <DependentUpon>201905221133449_Initial-Create.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905210035589_Initial-Create2.cs" />
-    <Compile Include="Migrations\201905210035589_Initial-Create2.Designer.cs">
-      <DependentUpon>201905210035589_Initial-Create2.cs</DependentUpon>
+    <Compile Include="Migrations\201905221212320_Initial-Create2.cs" />
+    <Compile Include="Migrations\201905221212320_Initial-Create2.Designer.cs">
+      <DependentUpon>201905221212320_Initial-Create2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905221216059_Initial-Create3.cs" />
+    <Compile Include="Migrations\201905221216059_Initial-Create3.Designer.cs">
+      <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
@@ -194,11 +198,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905210010596_Initial-Create.resx">
-      <DependentUpon>201905210010596_Initial-Create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905221133449_Initial-Create.resx">
+      <DependentUpon>201905221133449_Initial-Create.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905210035589_Initial-Create2.resx">
-      <DependentUpon>201905210035589_Initial-Create2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905221212320_Initial-Create2.resx">
+      <DependentUpon>201905221212320_Initial-Create2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905221216059_Initial-Create3.resx">
+      <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

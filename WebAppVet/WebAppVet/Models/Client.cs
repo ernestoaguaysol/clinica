@@ -26,7 +26,6 @@ namespace WebAppVet.Models
     [MetadataType(typeof(ClientMetadata))]
     public partial class Client
     {
-
         public class ClientMetadata
         {
             [Key]

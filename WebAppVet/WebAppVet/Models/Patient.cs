@@ -23,9 +23,9 @@ namespace WebAppVet.Models
         
     }
 
+    [MetadataType(typeof(PatientMetadata))]
     public partial class Patient
     {
-        [MetadataType(typeof(PatientMetadata))]
         public class PatientMetadata
         {
             [Key]

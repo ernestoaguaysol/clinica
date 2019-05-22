@@ -15,10 +15,9 @@ namespace WebAppVet.Models
 
     }
 
+    [MetadataType(typeof(RoomMetadata))]
     public partial class Room
     {
-
-        [MetadataType(typeof(RoomMetadata))]
         public class RoomMetadata
         {
             [Key]
