@@ -73,9 +73,6 @@ namespace WebAppVet.Data
                 var reader = cmd.ExecuteReader();
                 List<Room> rooms = new List<Room>();
 
-                //cmd.CommandText = "Select * From Table Where Title = @Title";
-                //cmd.Parameters.Add("@Title", someone);
-
                 while (reader.Read())
                 {
                     rooms.Add(new Room
@@ -98,6 +95,9 @@ namespace WebAppVet.Data
         public void Delete(int id)
         {
             //var strsql = "DELETE FROM dbo.Room WHERE Id='id';";
+
+            //cmd.CommandText = "Select * From Table Where Title = @Title";
+            //cmd.Parameters.Add("@Title", someone);
             try
             {
                 //TODO
