@@ -9,14 +9,12 @@ namespace WebAppVet.Controllers
 {
     public class RoomController : Controller
     {
-        //private ClinicaDbContext db = new ClinicaDbContext();
+        private ClinicaDbContext db = new ClinicaDbContext();
 
         // GET: Room
         public ActionResult Index()
         {
-            //var rooms = db.Rooms.ToList();
-            var roomFacade = RoomFacade.getInstance();
-            var rooms = roomFacade.List();
+            var rooms = db.Rooms.ToList();
             return View(rooms);
         }
     }

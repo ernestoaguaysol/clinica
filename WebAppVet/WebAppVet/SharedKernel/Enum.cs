@@ -5,6 +5,11 @@ using System.Web;
 
 namespace WebAppVet.SharedKernel
 {
+    public enum TypeDocument
+    {
+        DNI = 0,
+        Other = 1
+    }
     public enum Gender
     {
         Female = 1,

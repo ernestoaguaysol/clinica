@@ -151,7 +151,6 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Data\ClinicaDbContext.cs" />
-    <Compile Include="Data\RoomDataGateway.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,6 +167,10 @@
     <Compile Include="Migrations\201905221216059_Initial-Create3.cs" />
     <Compile Include="Migrations\201905221216059_Initial-Create3.Designer.cs">
       <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906162243329_ClientDb.cs" />
+    <Compile Include="Migrations\201906162243329_ClientDb.Designer.cs">
+      <DependentUpon>201906162243329_ClientDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
@@ -206,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905221216059_Initial-Create3.resx">
       <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906162243329_ClientDb.resx">
+      <DependentUpon>201906162243329_ClientDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

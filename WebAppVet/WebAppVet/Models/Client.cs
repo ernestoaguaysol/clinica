@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
+using WebAppVet.SharedKernel;
 
 namespace WebAppVet.Models
 {
@@ -15,8 +16,15 @@ namespace WebAppVet.Models
         }
 
         public int Id { get; set; }
-        public string FullName { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string Document { get; set; }
+        public TypeDocument TypeDocument { get; set; }
         public string Email { get; set; }
+        public string Phone { get; set; }
+        public string MobilePhone { get; set; }
+        public string Address { get; set; }
+        public string UserName { get; set; }
 
         public IList<Patient> Patients { get; private set; }
 
@@ -30,13 +38,31 @@ namespace WebAppVet.Models
         {
             [Key]
             public int Id { get; set; }
-            [StringLength(250)]
+            [StringLength(50)]
             [Required]
-            public string FullName { get; set; }
+            public string Name { get; set; }
+            [StringLength(50)]
+            [Required]
+            public string Surname { get; set; }
+            [StringLength(50)]
+            [Required]
+            public string Document { get; set; }
+            [Required]
+            public TypeDocument TypeDocument { get; set; }
             [StringLength(50)]
             [EmailAddress]
             [Required]
             public string Email { get; set; }
+            [StringLength(50)]
+            [Phone]
+            public string Phone { get; set; }
+            [StringLength(50)]
+            [Phone]
+            public string MobilePhone { get; set; }
+            [StringLength(50)]
+            public string Address { get; set; }
+            [StringLength(50)]
+            public string UserName { get; set; }
         }
     }
 }
