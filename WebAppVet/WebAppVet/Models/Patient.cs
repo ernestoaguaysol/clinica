@@ -19,8 +19,9 @@ namespace WebAppVet.Models
         public int ClientId { get; set; }
         public string Name { get; set; }
         public Gender Gender { get; set; }
+        public DateTime Birthdate { get; set; }
+        public int SpeciesId { get; set; }
 
-        
     }
 
     [MetadataType(typeof(PatientMetadata))]
@@ -37,8 +38,10 @@ namespace WebAppVet.Models
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
-            [Required]
             public Gender Gender { get; set; }
+            public DateTime Birthdate { get; set; }
+            [Required]
+            public int SpeciesId { get; set; }
         }
     }
 }
