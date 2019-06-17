@@ -21,6 +21,7 @@ namespace WebAppVet.Models
         public Gender Gender { get; set; }
         public DateTime Birthdate { get; set; }
         public int SpeciesId { get; set; }
+        public double Weight { get; set; }
 
     }
 
@@ -42,6 +43,7 @@ namespace WebAppVet.Models
             public DateTime Birthdate { get; set; }
             [Required]
             public int SpeciesId { get; set; }
+            public double Weight { get; set; }
         }
     }
 }
