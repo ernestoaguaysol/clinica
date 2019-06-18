@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
@@ -15,12 +16,11 @@ namespace WebAppVet.Models
         }
 
         public int Id { get; set; }
-        public Client Owner { get; private set; }
         public int ClientId { get; set; }
+        public int SpeciesId { get; set; }
         public string Name { get; set; }
         public Gender Gender { get; set; }
-        public DateTime Birthdate { get; set; }
-        public int SpeciesId { get; set; }
+        public DateTime? Birthdate { get; set; }
         public double Weight { get; set; }
 
     }
@@ -33,16 +33,15 @@ namespace WebAppVet.Models
             [Key]
             public int Id { get; set; }
             [Required]
-            public Client Owner { get; private set; }
-            [Required]
             public int ClientId { get; set; }
+            [Required]
+            public int SpeciesId { get; set; }
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
             public Gender Gender { get; set; }
-            public DateTime Birthdate { get; set; }
-            [Required]
-            public int SpeciesId { get; set; }
+            [Column(TypeName = "datetime2")]
+            public DateTime? Birthdate { get; set; }
             public double Weight { get; set; }
         }
     }

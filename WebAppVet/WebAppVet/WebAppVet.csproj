@@ -156,25 +156,13 @@
     </Compile>
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Migrations\201905221133449_Initial-Create.cs" />
-    <Compile Include="Migrations\201905221133449_Initial-Create.Designer.cs">
-      <DependentUpon>201905221133449_Initial-Create.cs</DependentUpon>
+    <Compile Include="Migrations\201906172338454_initial-create.cs" />
+    <Compile Include="Migrations\201906172338454_initial-create.Designer.cs">
+      <DependentUpon>201906172338454_initial-create.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905221212320_Initial-Create2.cs" />
-    <Compile Include="Migrations\201905221212320_Initial-Create2.Designer.cs">
-      <DependentUpon>201905221212320_Initial-Create2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905221216059_Initial-Create3.cs" />
-    <Compile Include="Migrations\201905221216059_Initial-Create3.Designer.cs">
-      <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906162243329_ClientDb.cs" />
-    <Compile Include="Migrations\201906162243329_ClientDb.Designer.cs">
-      <DependentUpon>201906162243329_ClientDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906170035423_Update-Patient.cs" />
-    <Compile Include="Migrations\201906170035423_Update-Patient.Designer.cs">
-      <DependentUpon>201906170035423_Update-Patient.cs</DependentUpon>
+    <Compile Include="Migrations\201906172359433_initial-create3.cs" />
+    <Compile Include="Migrations\201906172359433_initial-create3.Designer.cs">
+      <DependentUpon>201906172359433_initial-create3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Client.cs" />
@@ -206,20 +194,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905221133449_Initial-Create.resx">
-      <DependentUpon>201905221133449_Initial-Create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906172338454_initial-create.resx">
+      <DependentUpon>201906172338454_initial-create.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905221212320_Initial-Create2.resx">
-      <DependentUpon>201905221212320_Initial-Create2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905221216059_Initial-Create3.resx">
-      <DependentUpon>201905221216059_Initial-Create3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906162243329_ClientDb.resx">
-      <DependentUpon>201906162243329_ClientDb.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906170035423_Update-Patient.resx">
-      <DependentUpon>201906170035423_Update-Patient.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906172359433_initial-create3.resx">
+      <DependentUpon>201906172359433_initial-create3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

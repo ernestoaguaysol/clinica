@@ -11,6 +11,7 @@ namespace WebAppVet.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Surname { get; set; }
         public string Email { get; set; }
 
         
@@ -26,6 +27,9 @@ namespace WebAppVet.Models
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
+            [StringLength(50)]
+            [Required]
+            public string Surname { get; set; }
             [EmailAddress]
             public string Email { get; set; }
         }

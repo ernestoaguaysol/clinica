@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
@@ -24,7 +25,6 @@ namespace WebAppVet.Models
         public string Phone { get; set; }
         public string MobilePhone { get; set; }
         public string Address { get; set; }
-        public string UserName { get; set; }
 
         public IList<Patient> Patients { get; private set; }
 
@@ -51,6 +51,7 @@ namespace WebAppVet.Models
             [StringLength(50)]
             [EmailAddress]
             [Required]
+            [Index(IsUnique = true)]
             public string Email { get; set; }
             [StringLength(50)]
             [Phone]
@@ -60,8 +61,6 @@ namespace WebAppVet.Models
             public string MobilePhone { get; set; }
             [StringLength(50)]
             public string Address { get; set; }
-            [StringLength(50)]
-            public string UserName { get; set; }
         }
     }
 }

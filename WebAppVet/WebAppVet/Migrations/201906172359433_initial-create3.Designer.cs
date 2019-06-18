@@ -7,13 +7,13 @@ namespace WebAppVet.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class ClientDb : IMigrationMetadata
+    public sealed partial class initialcreate3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ClientDb));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialcreate3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201906162243329_ClientDb"; }
+            get { return "201906172359433_initial-create3"; }
         }
         
         string IMigrationMetadata.Source
