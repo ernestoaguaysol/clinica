@@ -58,6 +58,7 @@ namespace WebAppVet.Migrations
                new Room { Id = 5, RoomTypeId = 2, Name = "B", Location = "pb" },
                new Room { Id = 6, RoomTypeId = 3, Name = "Lab General", Location = "pb" }
              );
+
         }
     }
 }
