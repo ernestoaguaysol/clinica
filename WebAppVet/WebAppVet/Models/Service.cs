@@ -13,7 +13,13 @@ namespace WebAppVet.Models
         {
         }
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int ServiceTypeId { get; set; }
+        public int PatientId { get; set; }
+        public int DoctorId { get; set; }
+        public double Price { get; set; }
+        public string Description { get; set; }
+
+        public IList<SupplyDetail> SupplyDetails { get; private set; }
     }
 
     [MetadataType(typeof(ServiceMetadata))]
@@ -24,6 +30,17 @@ namespace WebAppVet.Models
         {
             [Key]
             public int Id { get; set; }
+            [Required]
+            public int ServiceTypeId { get; set; }
+            [Required]
+            public int PatientId { get; set; }
+            [Required]
+            public int DoctorId { get; set; }
+            [Required]
+            public double Price { get; set; }
+            [StringLength(250)]
+            public string Description { get; set; }
+
         }
     }
 }

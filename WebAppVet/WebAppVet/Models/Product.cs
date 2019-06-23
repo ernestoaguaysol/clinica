@@ -17,6 +17,9 @@ namespace WebAppVet.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
+        public int Stock { get; set; }
+
+        public IList<SupplyDetail> SupplyDetails { get; private set; }
     }
 
     [MetadataType(typeof(ProductMetadata))]
@@ -34,6 +37,9 @@ namespace WebAppVet.Models
             public string Description { get; set; }
             [Required]
             public double Price { get; set; }
+            [Required]
+            public int Stock { get; set; }
+
         }
     }
 }

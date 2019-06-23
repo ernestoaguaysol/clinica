@@ -15,6 +15,7 @@ namespace WebAppVet.Models
         public string Email { get; set; }
 
         public IList<Appointment> Appointments { get; private set; }
+        public IList<Service> Services { get; private set; }
     }
 
     [MetadataType(typeof(DoctorMetadata))]

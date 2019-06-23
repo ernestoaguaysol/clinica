@@ -17,6 +17,7 @@ namespace WebAppVet.Models
         public string Name { get; set; }
 
         public IList<Appointment> Appointments { get; private set; }
+        public IList<Service> Services { get; private set; }
     }
 
     [MetadataType(typeof(ServiceTypeMetadata))]
