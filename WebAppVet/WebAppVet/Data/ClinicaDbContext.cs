@@ -23,6 +23,7 @@ namespace WebAppVet.Data
         public DbSet<Room> Rooms{ get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ServiceType> ServicesTypes { get; set; }
+        public DbSet<DoctorType> DoctorsTypes { get; set; }
         
 
     }

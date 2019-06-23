@@ -164,10 +164,15 @@
     <Compile Include="Migrations\201906231813517_add_ServiceType.Designer.cs">
       <DependentUpon>201906231813517_add_ServiceType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906231827377_add_DoctorType.cs" />
+    <Compile Include="Migrations\201906231827377_add_DoctorType.Designer.cs">
+      <DependentUpon>201906231827377_add_DoctorType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\DoctorType.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Room.cs" />
@@ -207,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906231813517_add_ServiceType.resx">
       <DependentUpon>201906231813517_add_ServiceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906231827377_add_DoctorType.resx">
+      <DependentUpon>201906231827377_add_DoctorType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
