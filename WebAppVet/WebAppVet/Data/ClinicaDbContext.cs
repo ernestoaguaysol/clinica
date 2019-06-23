@@ -25,6 +25,7 @@ namespace WebAppVet.Data
         public DbSet<ServiceType> ServicesTypes { get; set; }
         public DbSet<DoctorType> DoctorsTypes { get; set; }
         public DbSet<SupplyDetail> SupplyDetails { get; set; }
+        public DbSet<Provider> Providers { get; set; }
         
 
     }

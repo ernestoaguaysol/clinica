@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201906232304139_add_SupplyDetail.Designer.cs">
       <DependentUpon>201906232304139_add_SupplyDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906232343537_add_Provider.cs" />
+    <Compile Include="Migrations\201906232343537_add_Provider.Designer.cs">
+      <DependentUpon>201906232343537_add_Provider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
@@ -256,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906232304139_add_SupplyDetail.resx">
       <DependentUpon>201906232304139_add_SupplyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906232343537_add_Provider.resx">
+      <DependentUpon>201906232343537_add_Provider.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
