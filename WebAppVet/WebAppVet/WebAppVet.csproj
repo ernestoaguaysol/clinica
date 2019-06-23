@@ -126,10 +126,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\clinica.mdf" />
-    <Content Include="App_Data\clinica_log.ldf">
-      <DependentUpon>clinica.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -156,19 +152,18 @@
     </Compile>
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="Migrations\201906172338454_initial-create.cs" />
-    <Compile Include="Migrations\201906172338454_initial-create.Designer.cs">
-      <DependentUpon>201906172338454_initial-create.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201906172359433_initial-create3.cs" />
-    <Compile Include="Migrations\201906172359433_initial-create3.Designer.cs">
-      <DependentUpon>201906172359433_initial-create3.cs</DependentUpon>
+    <Compile Include="Migrations\201906230156569_initial-create.cs" />
+    <Compile Include="Migrations\201906230156569_initial-create.Designer.cs">
+      <DependentUpon>201906230156569_initial-create.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomType.cs" />
+    <Compile Include="Models\Service.cs" />
     <Compile Include="Models\Species.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SharedKernel\Enum.cs" />
@@ -194,12 +189,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906172338454_initial-create.resx">
-      <DependentUpon>201906172338454_initial-create.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906230156569_initial-create.resx">
+      <DependentUpon>201906230156569_initial-create.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906172359433_initial-create3.resx">
-      <DependentUpon>201906172359433_initial-create3.cs</DependentUpon>
-    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

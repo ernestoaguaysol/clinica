@@ -16,8 +16,6 @@ namespace WebAppVet.Migrations
 
         protected override void Seed(WebAppVet.Data.ClinicaDbContext context)
         {
-
-
             context.Species.AddOrUpdate(
                 s => s.Id,
                new Species { Id = 1, Name = "Perro" },
@@ -26,15 +24,15 @@ namespace WebAppVet.Migrations
 
             context.Clients.AddOrUpdate(
                 c => c.Id,
-               new Client { Id = 1, Name = "Carlos", Surname = "Perez", TypeDocument = 0, Document = "33123887" , Email = "email001@gmail.com"},
-               new Client { Id = 2, Name = "Pedro", Surname = "Perez", TypeDocument = 0, Document = "42123887" , Email = "email002@gmail.com"}
+               new Client { Id = 1, Name = "Carlos", Surname = "Perez", TypeDocument = 0, Document = "33123887", Email = "email001@gmail.com" },
+               new Client { Id = 2, Name = "Pedro", Surname = "Perez", TypeDocument = 0, Document = "42123887", Email = "email002@gmail.com" }
              );
 
             context.Patients.AddOrUpdate(
                 p => p.Id,
-               new Patient { Id = 1, Name = "Loqui", SpeciesId = 1, Gender = Gender.Female, ClientId = 1, Birthdate = new DateTime(2014,12,25) },
-               new Patient { Id = 2, Name = "Sam", SpeciesId = 1, Gender = Gender.Male, ClientId = 2 , Birthdate = new DateTime(2012,03,12) },
-               new Patient { Id = 3, Name = "Golum", SpeciesId = 1, Gender = Gender.Male, ClientId = 2 , Birthdate = new DateTime(2012,04,12) }
+               new Patient { Id = 1, Name = "Loqui", SpeciesId = 1, Gender = Gender.Female, ClientId = 1, Birthdate = new DateTime(2014, 12, 25) },
+               new Patient { Id = 2, Name = "Sam", SpeciesId = 1, Gender = Gender.Male, ClientId = 2, Birthdate = new DateTime(2012, 03, 12) },
+               new Patient { Id = 3, Name = "Golum", SpeciesId = 1, Gender = Gender.Male, ClientId = 2, Birthdate = new DateTime(2012, 04, 12) }
              );
 
             context.Doctors.AddOrUpdate(
@@ -44,10 +42,21 @@ namespace WebAppVet.Migrations
                new Doctor { Id = 2, Name = "Fiorela", Surname = "Quiroz", Email = "doc001@gmail.com" }
              );
 
+            context.RoomsTypes.AddOrUpdate(
+                r => r.Id,
+                new RoomType { Id = 1, Name = "Sala de Consultorio" },
+                new RoomType { Id = 2, Name = "Sala de Operación" },
+                new RoomType { Id = 3, Name = "Laboratorio" }
+            );
+
             context.Rooms.AddOrUpdate(
                r => r.Id,
-               new Room { Id = 1, Name = "sala 1", Location = "pb" },
-               new Room { Id = 2, Name = "sala 2", Location = "pb" }
+               new Room { Id = 1, RoomTypeId = 1, Name = "A", Location = "pb" },
+               new Room { Id = 2, RoomTypeId = 1, Name = "B", Location = "pb" },
+               new Room { Id = 3, RoomTypeId = 1, Name = "C", Location = "pb" },
+               new Room { Id = 4, RoomTypeId = 2, Name = "A", Location = "pb" },
+               new Room { Id = 5, RoomTypeId = 2, Name = "B", Location = "pb" },
+               new Room { Id = 6, RoomTypeId = 3, Name = "Lab General", Location = "pb" }
              );
         }
     }

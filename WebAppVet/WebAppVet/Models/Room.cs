@@ -10,6 +10,7 @@ namespace WebAppVet.Models
     public partial class Room : IEntity
     {
         public int Id { get; set; }
+        public int RoomTypeId { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
 
@@ -22,6 +23,8 @@ namespace WebAppVet.Models
         {
             [Key]
             public int Id { get; set; }
+            [Required]
+            public int RoomTypeId { get; set; }
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
