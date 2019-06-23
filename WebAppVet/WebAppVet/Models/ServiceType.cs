@@ -12,8 +12,11 @@ namespace WebAppVet.Models
         public ServiceType()
         {
         }
+
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public IList<Appointment> Appointments { get; private set; }
     }
 
     [MetadataType(typeof(ServiceTypeMetadata))]

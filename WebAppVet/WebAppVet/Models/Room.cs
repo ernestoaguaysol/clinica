@@ -9,10 +9,16 @@ namespace WebAppVet.Models
 {
     public partial class Room : IEntity
     {
+        public Room()
+        {
+        }
+
         public int Id { get; set; }
         public int RoomTypeId { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
+
+        public IList<Appointment> Appointments { get; private set; }
 
     }
 

@@ -23,6 +23,8 @@ namespace WebAppVet.Models
         public DateTime? Birthdate { get; set; }
         public double Weight { get; set; }
 
+        public IList<Appointment> Appointments { get; private set; }
+
     }
 
     [MetadataType(typeof(PatientMetadata))]

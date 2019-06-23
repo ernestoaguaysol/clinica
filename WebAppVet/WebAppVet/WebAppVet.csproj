@@ -168,6 +168,10 @@
     <Compile Include="Migrations\201906231827377_add_DoctorType.Designer.cs">
       <DependentUpon>201906231827377_add_DoctorType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906231955043_add_Appointment_FK.cs" />
+    <Compile Include="Migrations\201906231955043_add_Appointment_FK.Designer.cs">
+      <DependentUpon>201906231955043_add_Appointment_FK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Client.cs" />
@@ -215,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906231827377_add_DoctorType.resx">
       <DependentUpon>201906231827377_add_DoctorType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906231955043_add_Appointment_FK.resx">
+      <DependentUpon>201906231955043_add_Appointment_FK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
