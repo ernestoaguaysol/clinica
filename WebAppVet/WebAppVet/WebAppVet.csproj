@@ -192,6 +192,22 @@
     <Compile Include="Migrations\201906232343537_add_Provider.Designer.cs">
       <DependentUpon>201906232343537_add_Provider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906232355403_add_Buy.cs" />
+    <Compile Include="Migrations\201906232355403_add_Buy.Designer.cs">
+      <DependentUpon>201906232355403_add_Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906232357009_add_Buy1.cs" />
+    <Compile Include="Migrations\201906232357009_add_Buy1.Designer.cs">
+      <DependentUpon>201906232357009_add_Buy1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906240006102_add_BuyDetail.cs" />
+    <Compile Include="Migrations\201906240006102_add_BuyDetail.Designer.cs">
+      <DependentUpon>201906240006102_add_BuyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906240013085_add_FK_product_buyD_buy_provider.cs" />
+    <Compile Include="Migrations\201906240013085_add_FK_product_buyD_buy_provider.Designer.cs">
+      <DependentUpon>201906240013085_add_FK_product_buyD_buy_provider.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
@@ -263,6 +279,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906232343537_add_Provider.resx">
       <DependentUpon>201906232343537_add_Provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906232355403_add_Buy.resx">
+      <DependentUpon>201906232355403_add_Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906232357009_add_Buy1.resx">
+      <DependentUpon>201906232357009_add_Buy1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240006102_add_BuyDetail.resx">
+      <DependentUpon>201906240006102_add_BuyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240013085_add_FK_product_buyD_buy_provider.resx">
+      <DependentUpon>201906240013085_add_FK_product_buyD_buy_provider.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

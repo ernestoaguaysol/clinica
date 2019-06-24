@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
@@ -18,6 +19,7 @@ namespace WebAppVet.Models
         public int DoctorId { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
+        public DateTime Date { get; set; }
 
         public IList<SupplyDetail> SupplyDetails { get; private set; }
     }
@@ -40,6 +42,10 @@ namespace WebAppVet.Models
             public double Price { get; set; }
             [StringLength(250)]
             public string Description { get; set; }
+            [Required]
+            [Column(TypeName = "datetime2")]
+            public DateTime Date { get; set; }
+
 
         }
     }

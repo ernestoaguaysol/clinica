@@ -19,6 +19,8 @@ namespace WebAppVet.Models
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Address { get; set; }
+
+        public IList<Buy> Buys { get; private set; }
     }
 
     [MetadataType(typeof(ProviderMetadata))]
