@@ -22,6 +22,10 @@ namespace WebAppVet.Models
         public DateTime Date { get; set; }
 
         public IList<SupplyDetail> SupplyDetails { get; private set; }
+        public virtual double TotalPrice()
+        {
+            return Price + SupplyDetails.Sum(tp => tp.TotalPrice());
+        }
     }
 
     [MetadataType(typeof(ServiceMetadata))]

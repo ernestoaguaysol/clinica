@@ -17,6 +17,11 @@ namespace WebAppVet.Models
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public int ClientId { get; set; }
+        public IList<SaleDetail> SaleDetails { get; set; }
+        public virtual double TotalPrice()
+        {
+            return SaleDetails.Sum(tp => tp.TotalPrice());
+        }
 
     }
 

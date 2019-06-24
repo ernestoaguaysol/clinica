@@ -18,6 +18,10 @@ namespace WebAppVet.Models
         public int ProviderId { get; set; }
         public DateTime Date { get; set; }
         public IList<BuyDetail> BuyDetails { get; set; }
+        public virtual double TotalPrice()
+        {
+            return BuyDetails.Sum(tp => tp.TotalPrice());
+        }
     }
 
     [MetadataType(typeof(BuyMetadata))]

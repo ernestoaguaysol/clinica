@@ -40,6 +40,7 @@ namespace WebAppVet.Models
             [Required]
             public double Price { get; set; }
             [Required]
+            [Range(0, int.MaxValue)]
             public int Stock { get; set; }
 
         }

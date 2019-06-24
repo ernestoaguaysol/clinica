@@ -59,6 +59,33 @@ namespace WebAppVet.Migrations
                new Room { Id = 6, RoomTypeId = 3, Name = "Lab General", Location = "pb" }
              );
 
+            context.Products.AddOrUpdate(
+                p => p.Id,
+                new Product { Id = 1, Name = "Jeringa", Price = 10.00, Stock = 10},
+                new Product { Id = 2, Name = "Purgante para perro", Price = 50.00, Stock = 40},
+                new Product { Id = 3, Name = "Purgante para gato", Price = 60.00, Stock = 50},
+                new Product { Id = 4, Name = "Collar para perro", Price = 100.00, Stock = 10},
+                new Product { Id = 5, Name = "Correa para perro", Price = 100.00, Stock = 10},
+                new Product { Id = 6, Name = "Vitaminas", Price = 90.00, Stock = 100 }
+                );
+
+            context.Providers.AddOrUpdate(
+                p => p.Id,
+                new Provider { Id = 1, Name = "Juan", Surname = "Palavechino", Email = "provider1@gmail.com", Phone = "1122334451"},
+                new Provider { Id = 2, Name = "Juan", Surname = "Kilosa", Email = "provider2@gmail.com", Phone = "1122334452"},
+                new Provider { Id = 3, Name = "Lorena", Surname = "Galeano", Email = "provider3@gmail.com", Phone = "1122334453"},
+                new Provider { Id = 4, Name = "Juana", Surname = "Fenosa", Email = "provider4@gmail.com", Phone = "1122334454"},
+                new Provider { Id = 5, Name = "Andres", Surname = "Sandobal", Email = "provider5@gmail.com", Phone = "1122334455"},
+                new Provider { Id = 6, Name = "Karina", Surname = "Vales", Email = "provider6@gmail.com", Phone = "1122334456"}
+                );
+
+            context.ServicesTypes.AddOrUpdate(
+                st => st.Id,
+                new ServiceType { Id = 1, Name = "Cirugia Castración"},
+                new ServiceType { Id = 2, Name = "Consulta Médica"},
+                new ServiceType { Id = 3, Name = "Vacunación"}
+                );
+
         }
     }
 }

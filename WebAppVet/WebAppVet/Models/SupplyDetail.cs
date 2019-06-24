@@ -36,6 +36,7 @@ namespace WebAppVet.Models
             [Required]
             public int ServiceId { get; set; }
             [Required]
+            [Range(1, int.MaxValue)]
             public int Quantity { get; set; }
         }
     }

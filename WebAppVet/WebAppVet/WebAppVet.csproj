@@ -216,6 +216,10 @@
     <Compile Include="Migrations\201906240100070_add_FK_sales.Designer.cs">
       <DependentUpon>201906240100070_add_FK_sales.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906240208173_add_FK_sales1.cs" />
+    <Compile Include="Migrations\201906240208173_add_FK_sales1.Designer.cs">
+      <DependentUpon>201906240208173_add_FK_sales1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
@@ -305,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906240100070_add_FK_sales.resx">
       <DependentUpon>201906240100070_add_FK_sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240208173_add_FK_sales1.resx">
+      <DependentUpon>201906240208173_add_FK_sales1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
