@@ -27,6 +27,7 @@ namespace WebAppVet.Models
         public string Address { get; set; }
 
         public IList<Patient> Patients { get; private set; }
+        public IList<Sale> Sales { get; private set; }
 
     }
 

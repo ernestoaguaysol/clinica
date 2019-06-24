@@ -21,6 +21,7 @@ namespace WebAppVet.Models
 
         public IList<SupplyDetail> SupplyDetails { get; private set; }
         public IList<BuyDetail> BuyDetails { get; private set; }
+        public IList<SaleDetail> SaleDetails { get; private set; }
     }
 
     [MetadataType(typeof(ProductMetadata))]

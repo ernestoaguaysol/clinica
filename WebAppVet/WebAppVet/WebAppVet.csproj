@@ -208,6 +208,14 @@
     <Compile Include="Migrations\201906240013085_add_FK_product_buyD_buy_provider.Designer.cs">
       <DependentUpon>201906240013085_add_FK_product_buyD_buy_provider.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906240034328_add_Sale_and_SaleDetail.cs" />
+    <Compile Include="Migrations\201906240034328_add_Sale_and_SaleDetail.Designer.cs">
+      <DependentUpon>201906240034328_add_Sale_and_SaleDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906240100070_add_FK_sales.cs" />
+    <Compile Include="Migrations\201906240100070_add_FK_sales.Designer.cs">
+      <DependentUpon>201906240100070_add_FK_sales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
@@ -291,6 +299,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906240013085_add_FK_product_buyD_buy_provider.resx">
       <DependentUpon>201906240013085_add_FK_product_buyD_buy_provider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240034328_add_Sale_and_SaleDetail.resx">
+      <DependentUpon>201906240034328_add_Sale_and_SaleDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906240100070_add_FK_sales.resx">
+      <DependentUpon>201906240100070_add_FK_sales.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
