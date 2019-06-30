@@ -220,18 +220,24 @@
     <Compile Include="Migrations\201906240208173_add_FK_sales1.Designer.cs">
       <DependentUpon>201906240208173_add_FK_sales1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906301530290_delete_roomType.cs" />
+    <Compile Include="Migrations\201906301530290_delete_roomType.Designer.cs">
+      <DependentUpon>201906301530290_delete_roomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906301544084_delete_DoctorType.cs" />
+    <Compile Include="Migrations\201906301544084_delete_DoctorType.Designer.cs">
+      <DependentUpon>201906301544084_delete_DoctorType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
     <Compile Include="Models\BuyDetail.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Doctor.cs" />
-    <Compile Include="Models\DoctorType.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Provider.cs" />
     <Compile Include="Models\Room.cs" />
-    <Compile Include="Models\RoomType.cs" />
     <Compile Include="Models\Sale.cs" />
     <Compile Include="Models\SaleDetail.cs" />
     <Compile Include="Models\Service.cs" />
@@ -312,6 +318,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906240208173_add_FK_sales1.resx">
       <DependentUpon>201906240208173_add_FK_sales1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301530290_delete_roomType.resx">
+      <DependentUpon>201906301530290_delete_roomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301544084_delete_DoctorType.resx">
+      <DependentUpon>201906301544084_delete_DoctorType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

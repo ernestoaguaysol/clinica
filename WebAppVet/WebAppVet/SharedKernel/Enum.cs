@@ -16,6 +16,21 @@ namespace WebAppVet.SharedKernel
         Male = 2
     }
 
+    public enum RoomType
+    {
+        OfficeRoom = 0,
+        OperationRoom = 1,
+        Lab = 2
+    }
+
+    public enum DoctorType
+    {
+        Veterinarian = 0,
+        Surgeon = 1,
+        Assistant = 2,
+        Other = 3
+    }
+
     public enum TrackingState
     {
         Unchanged = 0,

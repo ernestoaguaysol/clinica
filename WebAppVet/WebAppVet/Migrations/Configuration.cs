@@ -37,26 +37,19 @@ namespace WebAppVet.Migrations
 
             context.Doctors.AddOrUpdate(
                d => d.Id,
-               new Doctor { Id = 0, Name = "Alberto", Surname = "Lisboa", Email = "doc001@gmail.com" },
-               new Doctor { Id = 1, Name = "Lautaro", Surname = "Almiron", Email = "doc001@gmail.com" },
-               new Doctor { Id = 2, Name = "Fiorela", Surname = "Quiroz", Email = "doc001@gmail.com" }
+               new Doctor { Id = 1, DoctorType = DoctorType.Veterinarian , Name = "Alberto", Surname = "Lisboa", Email = "doc001@gmail.com" },
+               new Doctor { Id = 2, DoctorType = DoctorType.Surgeon , Name = "Lautaro", Surname = "Almiron", Email = "doc001@gmail.com" },
+               new Doctor { Id = 3, DoctorType = DoctorType.Assistant , Name = "Fiorela", Surname = "Quiroz", Email = "doc001@gmail.com" }
              );
-
-            context.RoomsTypes.AddOrUpdate(
-                r => r.Id,
-                new RoomType { Id = 1, Name = "Sala de Consultorio" },
-                new RoomType { Id = 2, Name = "Sala de Operación" },
-                new RoomType { Id = 3, Name = "Laboratorio" }
-            );
 
             context.Rooms.AddOrUpdate(
                r => r.Id,
-               new Room { Id = 1, RoomTypeId = 1, Name = "A", Location = "pb" },
-               new Room { Id = 2, RoomTypeId = 1, Name = "B", Location = "pb" },
-               new Room { Id = 3, RoomTypeId = 1, Name = "C", Location = "pb" },
-               new Room { Id = 4, RoomTypeId = 2, Name = "A", Location = "pb" },
-               new Room { Id = 5, RoomTypeId = 2, Name = "B", Location = "pb" },
-               new Room { Id = 6, RoomTypeId = 3, Name = "Lab General", Location = "pb" }
+               new Room { Id = 1, RoomType = RoomType.Lab , Name = "A", Location = "pb" },
+               new Room { Id = 2, RoomType = RoomType.OfficeRoom, Name = "B", Location = "pb" },
+               new Room { Id = 3, RoomType = RoomType.OfficeRoom, Name = "C", Location = "pb" },
+               new Room { Id = 4, RoomType = RoomType.OfficeRoom, Name = "A", Location = "pb" },
+               new Room { Id = 5, RoomType = RoomType.OperationRoom, Name = "B", Location = "pb" },
+               new Room { Id = 6, RoomType = RoomType.OperationRoom, Name = "Lab General", Location = "pb" }
              );
 
             context.Products.AddOrUpdate(

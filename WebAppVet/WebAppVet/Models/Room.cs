@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
+using WebAppVet.SharedKernel;
 
 namespace WebAppVet.Models
 {
@@ -14,7 +15,7 @@ namespace WebAppVet.Models
         }
 
         public int Id { get; set; }
-        public int RoomTypeId { get; set; }
+        public RoomType RoomType { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }
 
@@ -30,7 +31,7 @@ namespace WebAppVet.Models
             [Key]
             public int Id { get; set; }
             [Required]
-            public int RoomTypeId { get; set; }
+            public RoomType RoomType { get; set; }
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
