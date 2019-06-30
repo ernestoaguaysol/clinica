@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
+using WebAppVet.SharedKernel;
 
 namespace WebAppVet.Models
 {
@@ -15,11 +16,13 @@ namespace WebAppVet.Models
         }
 
         public int Id { get; set; }
-        public int ServiceTypeId { get; set; }
+        public ServiceType ServiceType { get; set; }
         public int PatientId { get; set; }
         public int DoctorId { get; set; }
         public int RoomId { get; set; }
         public DateTime Date { get; set; }
+        public AppointmentState State { get; set; }
+        public string Description { get; set; }
     }
 
     [MetadataType(typeof(AppointmentMetadata))]
@@ -30,7 +33,7 @@ namespace WebAppVet.Models
             [Key]
             public int Id { get; set; }
             [Required]
-            public int ServiceTypeId { get; set; }
+            public ServiceType ServiceType { get; set; }
             [Index("IX_Appointment_Keywords", IsUnique = true, Order = 1)]
             [Required]
             public int PatientId { get; set; }
@@ -44,6 +47,11 @@ namespace WebAppVet.Models
             [Column(TypeName = "datetime2")]
             [Required]
             public DateTime Date { get; set; }
+            [Required]
+            public AppointmentState State { get; set; }
+            [StringLength(250)]
+            public string Description { get; set; }
+
         }
     }
 }

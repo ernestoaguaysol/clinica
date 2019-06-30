@@ -72,13 +72,6 @@ namespace WebAppVet.Migrations
                 new Provider { Id = 6, Name = "Karina", Surname = "Vales", Email = "provider6@gmail.com", Phone = "1122334456"}
                 );
 
-            context.ServicesTypes.AddOrUpdate(
-                st => st.Id,
-                new ServiceType { Id = 1, Name = "Cirugia Castración"},
-                new ServiceType { Id = 2, Name = "Consulta Médica"},
-                new ServiceType { Id = 3, Name = "Vacunación"}
-                );
-
         }
     }
 }

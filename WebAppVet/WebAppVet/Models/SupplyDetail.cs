@@ -16,7 +16,7 @@ namespace WebAppVet.Models
         public int Id { get; set; }
         public int ProductId { get; set; }
         public Product Product { get; set; }
-        public int ServiceId { get; set; }
+        public int AppointmentId { get; set; }
         public int Quantity { get; set; }
         public virtual double TotalPrice()
         {
@@ -34,7 +34,7 @@ namespace WebAppVet.Models
             [Required]
             public int ProductId { get; set; }
             [Required]
-            public int ServiceId { get; set; }
+            public int AppointmentId { get; set; }
             [Required]
             [Range(1, int.MaxValue)]
             public int Quantity { get; set; }

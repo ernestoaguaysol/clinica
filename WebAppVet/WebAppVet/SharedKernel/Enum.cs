@@ -31,6 +31,20 @@ namespace WebAppVet.SharedKernel
         Other = 3
     }
 
+    public enum ServiceType
+    {
+        Surgery = 0,
+        MedicalConsultation = 1,
+        Vaccination = 2,
+        Other = 3
+    }
+
+    public enum AppointmentState
+    {
+        Active = 0,
+        Canceled = 1
+    }
+
     public enum TrackingState
     {
         Unchanged = 0,

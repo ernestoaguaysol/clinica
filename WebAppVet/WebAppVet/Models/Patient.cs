@@ -24,7 +24,6 @@ namespace WebAppVet.Models
         public double Weight { get; set; }
 
         public IList<Appointment> Appointments { get; private set; }
-        public IList<Service> Services { get; private set; }
 
     }
 

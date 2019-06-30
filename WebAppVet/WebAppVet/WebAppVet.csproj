@@ -228,6 +228,10 @@
     <Compile Include="Migrations\201906301544084_delete_DoctorType.Designer.cs">
       <DependentUpon>201906301544084_delete_DoctorType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906301712283_delete_service.cs" />
+    <Compile Include="Migrations\201906301712283_delete_service.Designer.cs">
+      <DependentUpon>201906301712283_delete_service.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Buy.cs" />
@@ -240,8 +244,6 @@
     <Compile Include="Models\Room.cs" />
     <Compile Include="Models\Sale.cs" />
     <Compile Include="Models\SaleDetail.cs" />
-    <Compile Include="Models\Service.cs" />
-    <Compile Include="Models\ServiceType.cs" />
     <Compile Include="Models\Species.cs" />
     <Compile Include="Models\SupplyDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -324,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906301544084_delete_DoctorType.resx">
       <DependentUpon>201906301544084_delete_DoctorType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301712283_delete_service.resx">
+      <DependentUpon>201906301712283_delete_service.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
