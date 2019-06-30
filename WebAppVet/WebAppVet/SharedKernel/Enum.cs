@@ -45,6 +45,14 @@ namespace WebAppVet.SharedKernel
         Canceled = 1
     }
 
+    public enum BillingType
+    {
+        A = 0,
+        B = 1,
+        C = 2,
+        Other = 3
+    }
+
     public enum TrackingState
     {
         Unchanged = 0,

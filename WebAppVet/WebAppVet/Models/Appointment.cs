@@ -23,6 +23,7 @@ namespace WebAppVet.Models
         public DateTime Date { get; set; }
         public AppointmentState State { get; set; }
         public string Description { get; set; }
+        public Billing Billing { get; set; }
     }
 
     [MetadataType(typeof(AppointmentMetadata))]

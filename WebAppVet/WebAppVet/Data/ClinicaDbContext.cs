@@ -26,7 +26,8 @@ namespace WebAppVet.Data
         public DbSet<BuyDetail> BuyDetails { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<SaleDetail> SaleDetails { get; set; }
+        public DbSet<CommercialInformation> CommercialInformations { get; set; }
+        public DbSet<Billing> Billings { get; set; }
         
-
     }
 }

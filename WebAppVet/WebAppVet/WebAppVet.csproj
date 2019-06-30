@@ -232,11 +232,29 @@
     <Compile Include="Migrations\201906301712283_delete_service.Designer.cs">
       <DependentUpon>201906301712283_delete_service.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906301730428_add_CommercialInformation.cs" />
+    <Compile Include="Migrations\201906301730428_add_CommercialInformation.Designer.cs">
+      <DependentUpon>201906301730428_add_CommercialInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906301747019_add_Billing.cs" />
+    <Compile Include="Migrations\201906301747019_add_Billing.Designer.cs">
+      <DependentUpon>201906301747019_add_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906301750383_add_ComertialInf_FK_Billing.cs" />
+    <Compile Include="Migrations\201906301750383_add_ComertialInf_FK_Billing.Designer.cs">
+      <DependentUpon>201906301750383_add_ComertialInf_FK_Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906301759030_add_FK_SaleAndAppointment_Billing.cs" />
+    <Compile Include="Migrations\201906301759030_add_FK_SaleAndAppointment_Billing.Designer.cs">
+      <DependentUpon>201906301759030_add_FK_SaleAndAppointment_Billing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Billing.cs" />
     <Compile Include="Models\Buy.cs" />
     <Compile Include="Models\BuyDetail.cs" />
     <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\CommercialInformation.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Product.cs" />
@@ -329,6 +347,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906301712283_delete_service.resx">
       <DependentUpon>201906301712283_delete_service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301730428_add_CommercialInformation.resx">
+      <DependentUpon>201906301730428_add_CommercialInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301747019_add_Billing.resx">
+      <DependentUpon>201906301747019_add_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301750383_add_ComertialInf_FK_Billing.resx">
+      <DependentUpon>201906301750383_add_ComertialInf_FK_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906301759030_add_FK_SaleAndAppointment_Billing.resx">
+      <DependentUpon>201906301759030_add_FK_SaleAndAppointment_Billing.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

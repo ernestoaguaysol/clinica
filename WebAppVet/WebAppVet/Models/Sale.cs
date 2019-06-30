@@ -22,6 +22,7 @@ namespace WebAppVet.Models
         {
             return SaleDetails.Sum(tp => tp.TotalPrice());
         }
+        public Billing Billing { get; set; }
 
     }
 
@@ -35,7 +36,6 @@ namespace WebAppVet.Models
             [Required]
             [Column(TypeName = "datetime2")]
             public DateTime Date { get; set; }
-            // se puede hacer una compra sin cliente por eso no es [Required]
             public int ClientId { get; set; }
 
         }
