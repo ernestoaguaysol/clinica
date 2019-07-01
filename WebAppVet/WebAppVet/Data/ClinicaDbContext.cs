@@ -9,7 +9,7 @@ namespace WebAppVet.Data
 {
     public class ClinicaDbContext : DbContext
     {
-        public ClinicaDbContext() :base("veterinariaDB")
+        public ClinicaDbContext() :base("ClinicaDbContext")
         {
 
         }
