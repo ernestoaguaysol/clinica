@@ -248,6 +248,10 @@
     <Compile Include="Migrations\201906301759030_add_FK_SaleAndAppointment_Billing.Designer.cs">
       <DependentUpon>201906301759030_add_FK_SaleAndAppointment_Billing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907011357151_FK_supplyDetail_Appointment.cs" />
+    <Compile Include="Migrations\201907011357151_FK_supplyDetail_Appointment.Designer.cs">
+      <DependentUpon>201907011357151_FK_supplyDetail_Appointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -359,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906301759030_add_FK_SaleAndAppointment_Billing.resx">
       <DependentUpon>201906301759030_add_FK_SaleAndAppointment_Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011357151_FK_supplyDetail_Appointment.resx">
+      <DependentUpon>201907011357151_FK_supplyDetail_Appointment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

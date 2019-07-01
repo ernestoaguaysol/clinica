@@ -24,6 +24,7 @@ namespace WebAppVet.Models
         public AppointmentState State { get; set; }
         public string Description { get; set; }
         public Billing Billing { get; set; }
+        public IList<SupplyDetail> SupplyDetails { get; set; }
     }
 
     [MetadataType(typeof(AppointmentMetadata))]

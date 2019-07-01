@@ -42,7 +42,8 @@ namespace WebAppVet.SharedKernel
     public enum AppointmentState
     {
         Active = 0,
-        Canceled = 1
+        Attended = 1,
+        Canceled = 2
     }
 
     public enum BillingType
