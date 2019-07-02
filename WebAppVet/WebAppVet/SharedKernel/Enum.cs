@@ -8,7 +8,9 @@ namespace WebAppVet.SharedKernel
     public enum TypeDocument
     {
         DNI = 0,
-        Other = 1
+        CUIT = 1,
+        CUIL = 2,
+        Passport = 3
     }
     public enum Gender
     {

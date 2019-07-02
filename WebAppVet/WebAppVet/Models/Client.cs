@@ -17,9 +17,10 @@ namespace WebAppVet.Models
         }
 
         public int Id { get; set; }
+        public int Code { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string Document { get; set; }
+        public string DocumentNumber { get; set; }
         public TypeDocument TypeDocument { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
@@ -38,6 +39,9 @@ namespace WebAppVet.Models
         {
             [Key]
             public int Id { get; set; }
+            [Required]
+            [Index(IsUnique = true)]
+            public int Code { get; set; }
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
@@ -46,7 +50,7 @@ namespace WebAppVet.Models
             public string Surname { get; set; }
             [StringLength(50)]
             [Required]
-            public string Document { get; set; }
+            public string DocumentNumber { get; set; }
             [Required]
             public TypeDocument TypeDocument { get; set; }
             [StringLength(50)]

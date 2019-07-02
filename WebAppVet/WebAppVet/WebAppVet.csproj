@@ -252,6 +252,14 @@
     <Compile Include="Migrations\201907011357151_FK_supplyDetail_Appointment.Designer.cs">
       <DependentUpon>201907011357151_FK_supplyDetail_Appointment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907021534111_prueba.cs" />
+    <Compile Include="Migrations\201907021534111_prueba.Designer.cs">
+      <DependentUpon>201907021534111_prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021538198_IndexCode_Clients.cs" />
+    <Compile Include="Migrations\201907021538198_IndexCode_Clients.Designer.cs">
+      <DependentUpon>201907021538198_IndexCode_Clients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -366,6 +374,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011357151_FK_supplyDetail_Appointment.resx">
       <DependentUpon>201907011357151_FK_supplyDetail_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021534111_prueba.resx">
+      <DependentUpon>201907021534111_prueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021538198_IndexCode_Clients.resx">
+      <DependentUpon>201907021538198_IndexCode_Clients.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

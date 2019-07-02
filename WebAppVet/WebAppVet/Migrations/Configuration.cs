@@ -24,15 +24,15 @@ namespace WebAppVet.Migrations
 
             context.Clients.AddOrUpdate(
                 c => c.Id,
-               new Client { Id = 1, Name = "Carlos", Surname = "Perez", TypeDocument = 0, Document = "33123887", Email = "email001@gmail.com" },
-               new Client { Id = 2, Name = "Carlos", Surname = "Zalazar", TypeDocument = 0, Document = "33243887", Email = "email002@gmail.com" },
-               new Client { Id = 3, Name = "Kevin", Surname = "Zacarias", TypeDocument = 0, Document = "33563887", Email = "email003@gmail.com" },
-               new Client { Id = 4, Name = "Barbara", Surname = "Portillo", TypeDocument = 0, Document = "34123887", Email = "email004@gmail.com" },
-               new Client { Id = 5, Name = "Hugo", Surname = "Gerez", TypeDocument = 0, Document = "34523887", Email = "email005@gmail.com" },
-               new Client { Id = 6, Name = "Fiorella", Surname = "Aquino", TypeDocument = 0, Document = "33563887", Email = "email006@gmail.com" },
-               new Client { Id = 7, Name = "Carla", Surname = "Killia", TypeDocument = 0, Document = "33123677", Email = "email007@gmail.com" },
-               new Client { Id = 8, Name = "Patricia", Surname = "Fantino", TypeDocument = 0, Document = "33893887", Email = "email008@gmail.com" },
-               new Client { Id = 9, Name = "Pedro", Surname = "Hidalgo", TypeDocument = 0, Document = "42122587", Email = "email009@gmail.com" }
+               new Client { Id = 1, Code = 1,Name = "Carlos", Surname = "Perez", TypeDocument = TypeDocument.DNI, DocumentNumber = "33123887", Email = "email001@gmail.com" },
+               new Client { Id = 2, Code = 2,Name = "Carlos", Surname = "Zalazar", TypeDocument = TypeDocument.DNI, DocumentNumber = "33243887", Email = "email002@gmail.com" },
+               new Client { Id = 3, Code = 3,Name = "Kevin", Surname = "Zacarias", TypeDocument = TypeDocument.DNI, DocumentNumber = "33563887", Email = "email003@gmail.com" },
+               new Client { Id = 4, Code = 4,Name = "Barbara", Surname = "Portillo", TypeDocument = TypeDocument.DNI, DocumentNumber = "34123887", Email = "email004@gmail.com" },
+               new Client { Id = 5, Code = 5,Name = "Hugo", Surname = "Gerez", TypeDocument = TypeDocument.DNI, DocumentNumber = "34523887", Email = "email005@gmail.com" },
+               new Client { Id = 6, Code = 6,Name = "Fiorella", Surname = "Aquino", TypeDocument = TypeDocument.DNI, DocumentNumber = "33563887", Email = "email006@gmail.com" },
+               new Client { Id = 7, Code = 7,Name = "Carla", Surname = "Killia", TypeDocument = TypeDocument.DNI, DocumentNumber = "33123677", Email = "email007@gmail.com" },
+               new Client { Id = 8, Code = 8,Name = "Patricia", Surname = "Fantino", TypeDocument = TypeDocument.DNI, DocumentNumber = "33893887", Email = "email008@gmail.com" },
+               new Client { Id = 9, Code = 9,Name = "Pedro", Surname = "Hidalgo", TypeDocument = TypeDocument.DNI, DocumentNumber = "42122587", Email = "email009@gmail.com" }
              );
 
             context.Patients.AddOrUpdate(
