@@ -50,9 +50,9 @@ namespace WebAppVet.Migrations
 
             context.Doctors.AddOrUpdate(
                d => d.Id,
-               new Doctor { Id = 1, DoctorType = DoctorType.Veterinarian , Name = "Alberto", Surname = "Lisboa", Email = "doc001@gmail.com" },
-               new Doctor { Id = 2, DoctorType = DoctorType.Surgeon , Name = "Lautaro", Surname = "Almiron", Email = "doc001@gmail.com" },
-               new Doctor { Id = 3, DoctorType = DoctorType.Assistant , Name = "Fiorela", Surname = "Quiroz", Email = "doc001@gmail.com" }
+               new Doctor { Id = 1, Code = 1, DoctorType = DoctorType.Veterinarian , Name = "Alberto", Surname = "Lisboa", Email = "doc001@gmail.com" },
+               new Doctor { Id = 2, Code = 2, DoctorType = DoctorType.Surgeon , Name = "Lautaro", Surname = "Almiron", Email = "doc002@gmail.com" },
+               new Doctor { Id = 3, Code = 3, DoctorType = DoctorType.Assistant , Name = "Fiorela", Surname = "Quiroz", Email = "doc003@gmail.com" }
              );
 
             context.Rooms.AddOrUpdate(

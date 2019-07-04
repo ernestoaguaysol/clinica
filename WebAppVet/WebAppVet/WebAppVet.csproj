@@ -260,6 +260,10 @@
     <Compile Include="Migrations\201907021538198_IndexCode_Clients.Designer.cs">
       <DependentUpon>201907021538198_IndexCode_Clients.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907041537052_add_code_in_table_Doctors.cs" />
+    <Compile Include="Migrations\201907041537052_add_code_in_table_Doctors.Designer.cs">
+      <DependentUpon>201907041537052_add_code_in_table_Doctors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -380,6 +384,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907021538198_IndexCode_Clients.resx">
       <DependentUpon>201907021538198_IndexCode_Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907041537052_add_code_in_table_Doctors.resx">
+      <DependentUpon>201907041537052_add_code_in_table_Doctors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

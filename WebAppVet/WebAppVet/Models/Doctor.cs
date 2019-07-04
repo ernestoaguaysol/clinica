@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using WebAppVet.Interfaces;
@@ -11,6 +12,7 @@ namespace WebAppVet.Models
     public partial class Doctor : IEntity
     {
         public int Id { get; set; }
+        public int Code { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
@@ -26,13 +28,19 @@ namespace WebAppVet.Models
         {
             [Key]
             public int Id { get; set; }
+            [Required]
+            [Index(IsUnique = true)]
+            public int Code { get; set; }
             [StringLength(50)]
             [Required]
             public string Name { get; set; }
             [StringLength(50)]
             [Required]
             public string Surname { get; set; }
+            [StringLength(50)]
             [EmailAddress]
+            [Required]
+            [Index(IsUnique = true)]
             public string Email { get; set; }
             [Required]
             public DoctorType DoctorType { get; set; }
