@@ -264,6 +264,22 @@
     <Compile Include="Migrations\201907041537052_add_code_in_table_Doctors.Designer.cs">
       <DependentUpon>201907041537052_add_code_in_table_Doctors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907101844550_add_WorkDay.cs" />
+    <Compile Include="Migrations\201907101844550_add_WorkDay.Designer.cs">
+      <DependentUpon>201907101844550_add_WorkDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907101850275_FK_WorkDay_DoctorId.cs" />
+    <Compile Include="Migrations\201907101850275_FK_WorkDay_DoctorId.Designer.cs">
+      <DependentUpon>201907101850275_FK_WorkDay_DoctorId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907101909084_FK_WorkDay_1.cs" />
+    <Compile Include="Migrations\201907101909084_FK_WorkDay_1.Designer.cs">
+      <DependentUpon>201907101909084_FK_WorkDay_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907101910208_FK_WorkDay_2.cs" />
+    <Compile Include="Migrations\201907101910208_FK_WorkDay_2.Designer.cs">
+      <DependentUpon>201907101910208_FK_WorkDay_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Billing.cs" />
@@ -280,6 +296,7 @@
     <Compile Include="Models\SaleDetail.cs" />
     <Compile Include="Models\Species.cs" />
     <Compile Include="Models\SupplyDetail.cs" />
+    <Compile Include="Models\WorkDay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SharedKernel\Enum.cs" />
   </ItemGroup>
@@ -387,6 +404,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907041537052_add_code_in_table_Doctors.resx">
       <DependentUpon>201907041537052_add_code_in_table_Doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907101844550_add_WorkDay.resx">
+      <DependentUpon>201907101844550_add_WorkDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907101850275_FK_WorkDay_DoctorId.resx">
+      <DependentUpon>201907101850275_FK_WorkDay_DoctorId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907101909084_FK_WorkDay_1.resx">
+      <DependentUpon>201907101909084_FK_WorkDay_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907101910208_FK_WorkDay_2.resx">
+      <DependentUpon>201907101910208_FK_WorkDay_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

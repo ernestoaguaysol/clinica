@@ -19,6 +19,7 @@ namespace WebAppVet.Models
         public DoctorType DoctorType { get; set; }
 
         public IList<Appointment> Appointments { get; private set; }
+        public IList<WorkDay> WorkDays { get; private set; }
     }
 
     [MetadataType(typeof(DoctorMetadata))]

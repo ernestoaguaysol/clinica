@@ -55,6 +55,16 @@ namespace WebAppVet.Migrations
                new Doctor { Id = 3, Code = 3, DoctorType = DoctorType.Assistant , Name = "Fiorela", Surname = "Quiroz", Email = "doc003@gmail.com" }
              );
 
+            context.WorkDays.AddOrUpdate(
+                wd => wd.Id,
+                new WorkDay { Id = 1, DoctorId = 1, Day = DayOfWeek.Monday},
+                new WorkDay { Id = 2, DoctorId = 1, Day = DayOfWeek.Tuesday },
+                new WorkDay { Id = 3, DoctorId = 1, Day = DayOfWeek.Wednesday },
+                new WorkDay { Id = 4, DoctorId = 1, Day = DayOfWeek.Thursday },
+                new WorkDay { Id = 5, DoctorId = 1, Day = DayOfWeek.Friday },
+                new WorkDay { Id = 6, DoctorId = 2, Day = DayOfWeek.Thursday }
+                );
+
             context.Rooms.AddOrUpdate(
                r => r.Id,
                new Room { Id = 1, RoomType = RoomType.OfficeRoom, Name = "A", Location = "pb" },

@@ -29,6 +29,8 @@ namespace WebAppVet.Data
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<CommercialInformation> CommercialInformations { get; set; }
         public DbSet<Billing> Billings { get; set; }
+        public DbSet<WorkDay> WorkDays { get; set; }
         
+
     }
 }
